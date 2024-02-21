@@ -1,0 +1,15 @@
+{
+    "sourceFeeds": [
+        {
+            "url": "https://e00-marca.uecdn.es/rss/futbol/primera-division.xml",
+            "provider":"Marca",
+            "category": "Ajedrez"
+        },
+        {
+            "url": "https://e00-marca.uecdn.es/rss/futbol/segunda-division.xml",
+            "provider":"Marca",
+            "category": "Futbol"
+        }
+    ]
+
+}

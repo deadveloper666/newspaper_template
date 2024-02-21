@@ -1,0 +1,14 @@
+.mycustomStyle { 
+    font-size: large;
+}
+
+/** Aqui sobreescribos estilos de material por los mios **/
+.md-header{
+    background-color: #060404;
+}
+
+@media screen and (max-width: 76.2344em) {
+.md-nav--primary .md-nav__title[for="__drawer"]{
+    background-color: #060404;
+}
+}

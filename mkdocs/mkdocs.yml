@@ -1,0 +1,137 @@
+site_name: Test Site
+site_url: https://www.test_site.com/
+site_description: Project documentation with Markdown.
+site_author: The test site group
+
+## La pagina oficial donde estan todas las opciones de mkdocs https://github.com/mkdocs/catalog
+
+theme:
+  language: es  # https://github.com/squidfunk/mkdocs-material/blob/master/docs/setup/changing-the-language.md
+  #name: material #bootstrap4 #gitbook  # cualquiera de https://mkdocs.github.io/mkdocs-bootswatch/
+  name: material
+  custom_dir: overrides
+  nav_style: dark
+  palette:
+    scheme: slate  # default (ligth white)
+  logo: runtime_assets/icons/logo.png
+  favicon: runtime_assets/icons/logo.png
+  font:
+    text: Playfair Display #Roboto  # se puede elegir cualquiera de https://fonts.google.com/ (Default Roboto)
+    code: Roboto Mono
+  features:
+  #  - navigation.sections # Para menu superior navigation.tabs
+    - navigation.tabs
+    - navigation.expand
+  #  - navigation.tabs
+    - header.autohide  # Collapse menu on scrolling
+extra_css:
+  # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+  - runtime_assets/css/extra.css
+  - runtime_assets/css/neoteroi-cards/neoteroi-mkdocs.css
+  - runtime_assets/css/embeded_media/embeded_media.css
+extra_javascript:
+  # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js
+  - runtime_assets/javascript/custom_functions.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js  
+  # for charts-plugin
+  - https://cdn.jsdelivr.net/npm/vega@5
+  - https://cdn.jsdelivr.net/npm/vega-lite@5
+  - https://cdn.jsdelivr.net/npm/vega-embed@6  
+copyright: Copyright &copy; 2016 - 2023 test site
+# extra:
+#  disqus: ddd  # El mejor sistema es https://giscus.app/es lo mete como comentarios en tu cuenta de github (es necesario tener configurado el repo_url, etc..)
+extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
+        - name: vegalite
+          class: vegalite
+          format: !!python/name:mkdocs_charts_plugin.fences.fence_vegalite          
+  - pymdownx.tabbed:
+      alternate_style: true           
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg           
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - smarty   #convert ascii to html characters
+  - abbr
+  - attr_list  # used for card views
+  - md_in_html  # used for card views
+  - def_list
+  - footnotes
+  - codehilite
+  - meta   #Use metadata for generate menus
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - neoteroi.cards # show cards and plugins from neoteroi https://github.com/Neoteroi/mkdocs-plugins
+  - neoteroi.timeline # Timelline diagrams
+  - neoteroi.projects # Gantt Diagrams
+  - neoteroi.spantable # Tables
+plugins:
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])' 
+  - exclude-search: #https://github.com/chrieke/mkdocs-exclude-search
+      exclude:
+        - first.md
+        - seccionC/index.md
+        - third.md#some-heading
+        - dir2/*
+#        - /*/fifth.md
+      ignore:
+        - dir/second.md#some-heading
+      # exclude_unreferenced: true  # ojo con esta, que casi siempre las tengo unreferenced y no aparecen 
+          
+  - charts
+  - macros:
+      include_dir: docs/_include/macros   # https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/
+  - mermaid2:
+      arguments:
+        theme: 'dark'
+        themeVariables:
+          primaryColor: '#BB2528'
+          primaryTextColor: '#fff'
+          primaryBorderColor: '#7C0000'
+          lineColor: '#F8B229'
+          secondaryColor: '#006100'
+          tertiaryColor: '#fff'  
+  - exclude: # Util cuando se leen directorios directamente, pero si tenemos nav seccion, se comenta y ya
+      glob:
+        - nav/seccionC/*   
+        - "*.tmp"
+        - "*.pdf"
+        - "*.gz"
+      regex:
+        - '.*\.(tmp|bin|tar)$'
+#  - include:  # La opcion contraria si queremos incluir en vez de excluir Docs at https://pypi.org/project/mkdocs-include/
+#      glob:
+#        - _include/*        
+  # - git-authors  Solo valido si esta linkeado a repositorio github
+nav:
+  - Home: nav/index.md
+  - Neoteroi Examples: nav/neoteori_examples/index.md
+  - Media Examples: nav/media_embeded/index.md
+  - Trabajando con Macros: nav/macros/index.md
+  - Ejemplos: nav/examples/index.md        
+  - NewsPapper: nav/newspaper/index.md        
+
+  
+
+
