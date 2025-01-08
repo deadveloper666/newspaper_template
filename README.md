@@ -11,8 +11,15 @@ channel_name='@GolTelevision'
 curl --silent "https://www.youtube.com/c/@GolTelevision/videos" |\
     grep -o -P '(?<=canonical" href="https://www.youtube.com/channel/)[^"]*'
 	
-	UCWw6r_yGcl7fC0bShxOYhWg
+y el id del channel es ->	UCWw6r_yGcl7fC0bShxOYhWg
 
+Este es otro ejemplo con el canal de la @NBA
+curl --silent "https://www.youtube.com/c/@NBA/videos" |\
+    grep -o -P '(?<=canonical" href="https://www.youtube.com/channel/)[^"]*'
+
+y el id es UCWJ2lWNubArHWmf3FIHbfcQ
+
+(ahora puedo meterlo como entrada en el sourceFeedsConfig.json y se procesara)
 
 # Source channels ya verificados:
 GolTV resumentes de futbol: https://www.youtube.com/feeds/videos.xml?channel_id=UCWw6r_yGcl7fC0bShxOYhWg
@@ -24,4 +31,22 @@ La idea es hacer unas llamadas a servicios RSS y tras obtener esos datos, genera
 ## 1.1. Obteniendo RSS
 Utilizamos el script  generator.sh indicando cual es la url del feed y el archivo de salida (json)
 
-generator.sh fetchRSS https://e00-marca.uecdn.es/rss/futbol/primera-division.xml myFeedFileConfiguration.json
+./generator.sh fetchRSS 
+
+## 1.2 Generando los MD
+A partir de los json que se han generado a partir de la info de la fuente RSS, podemos generar el MD correspondiente.
+
+./generator.sh generateMD 
+
+En este paso habremos obtenido los MD en la carpeta build_tmp/md , podemos coger cualquier archivo MD generado y meterlo dentro del mkdocs site.
+
+Por ejemplo estoy cogiendo el contenido de build_tmp/md/Futbol/index.md y lo estoy copiando dentro de mkdocs/docs/nav/newspapser/index.md 
+
+y navego a la web y veo el contenido
+
+
+# GENERANDO EL SITE ESTATICO 
+Ahora podemos usar el script 
+
+cd mkdocs
+./documentationServer.sh assemble para generar la carpeta /site

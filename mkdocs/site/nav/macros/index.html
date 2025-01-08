@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Explicacion de las macros" name="description"/>
+<meta content="The test site group" name="author"/>
+<link href="https://www.test_site.com/nav/macros/" rel="canonical"/>
+<link href="../media_embeded/" rel="prev"/>
+<link href="../examples/" rel="next"/>
+<link href="../../runtime_assets/icons/logo.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.4.10" name="generator"/>
+<title>MKDocs Testing site</title>
+<link href="../../assets/stylesheets/main.fad675c6.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.356b1318.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Playfair Display";--md-code-font:"Roboto Mono"}</style>
+<link href="../../runtime_assets/css/extra.css" rel="stylesheet"/>
+<link href="../../runtime_assets/css/neoteroi-cards/neoteroi-mkdocs.css" rel="stylesheet"/>
+<link href="../../runtime_assets/css/embeded_media/embeded_media.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<!--Ads-->
+<script async="" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7564517257477302"></script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#macros">
+            Saltar a contenido
+          </a>
+</div>
+<div data-md-component="announce">
+</div>
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Determine classes -->
+<!-- Header -->
+<header class="md-header" data-md-component="header">
+<nav aria-label="Cabecera" class="md-header__inner md-grid">
+<!-- Link to home -->
+<a aria-label="Test Site" class="md-header__button md-logo" data-md-component="logo" href="../.." title="Test Site">
+<img alt="logo" src="../../runtime_assets/icons/logo.png"/>
+</a>
+<!-- Button to open drawer -->
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<!-- Header title -->
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            Test Site
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Macros
+            
+          </span>
+</div>
+</div>
+</div>
+<!-- Color palette toggle -->
+<!-- Site language selector -->
+<!-- Button to open search modal -->
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<!-- Search interface -->
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Búsqueda" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Búsqueda" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Buscar" class="md-search__options">
+<button aria-label="Limpiar" class="md-search__icon md-icon" tabindex="-1" title="Limpiar" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Repository information -->
+</nav>
+<!-- Navigation tabs (sticky) -->
+<div> This template is overwrited!! (in overrides dir)</div>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Pestañas" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../">
+        
+  
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../neoteori_examples/">
+        
+  
+    
+  
+  Neoteroi Examples
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../media_embeded/">
+        
+  
+    
+  
+  Media Examples
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="./">
+        
+  
+    
+  
+  Trabajando con Macros
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../examples/">
+        
+  
+    
+  
+  Ejemplos
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../newspaper/">
+        
+  
+    
+  
+  NewsPapper
+
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-grid">
+                caca y pedote
+            </div>
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navegación" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Test Site" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="Test Site">
+<img alt="logo" src="../../runtime_assets/icons/logo.png"/>
+</a>
+    Test Site
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../">
+<span class="md-ellipsis">
+    Home
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../neoteori_examples/">
+<span class="md-ellipsis">
+    Neoteroi Examples
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../media_embeded/">
+<span class="md-ellipsis">
+    Media Examples
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Trabajando con Macros
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../examples/">
+<span class="md-ellipsis">
+    Ejemplos
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../newspaper/">
+<span class="md-ellipsis">
+    NewsPapper
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Tabla de contenidos" class="md-nav md-nav--secondary">
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="macros">Macros</h1>
+<p><a href="https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/">Documentacion oficial</a>
+Un macro es un fragmento de codigo parametrizado que podemos usar como una template.</p>
+<p>Necesitamos instalar el plugin macros:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-macros-plugin
+</code></pre></div></p>
+<p>Lo configuramos en mkdocs.yml indicando cual es la carpeta absoluta que incluye nuestras macros:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nt">plugins</span><span class="p">:</span>
+<a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">search</span><span class="p">:</span>
+<a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="w">      </span><span class="nt">separator</span><span class="p">:</span><span class="w"> </span><span class="s">'[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&amp;[lg]t;|(?!\b)(?=[A-Z][a-z])'</span><span class="w"> </span>
+<a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">macros</span><span class="p">:</span>
+<a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="w">      </span><span class="nt">include_dir</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docs/_include/macros</span><span class="w">   </span><span class="c1"># https://mkdocs-macros-plugin.readthedocs.io/en/latest/advanced/</span>
+</code></pre></div></p>
+<h1 id="definiendo-una-macro">Definiendo una macro</h1>
+<p>Creamos un archivo dentro y definimos una macro usando las directivas :</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>{% macro youtubeVideo(videoId, videoTitle) %}
+<a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>&lt;div class="embed-youtube"&gt;
+<a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>    &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/{{ videoId }}" title="{{ videoTitle }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt;
+<a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>&lt;/div&gt;
+<a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a>{% endmacro %}
+</code></pre></div>
+<h1 id="importando-la-macro">Importando la macro</h1>
+<p>En cualquiera de nuestros markdown podemos importar la macro</p>
+<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>{% from 'embeded_media.macros' import youtubeVideo %}
+</code></pre></div>
+y la usamos posteriormente invocandola indincando los argumentos, esto renderizara el contenido de la template  en nuestro fichero markdown</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>{{youtubeVideo('BcJSsEekO-U?si=POEgTtopYQ4uddHp', 'Al son del macarron')}}
+</code></pre></div>
+<p>O podemos importar todas las macros de un archivo y tenerlas bajo un prefijo para su uso:</p>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>{% import 'embeded_media.macros' as embeded_media_macros %}
+<a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>
+<a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>y luego en el documento la usamos asi , pasandole los argumentos:
+<a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a>
+<a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a>{{embeded_media_macros.spotifyList('0WjifMva8IEzE937TGqt9D?si=d4bd4aafcf244840')}}
+</code></pre></div>
+<h1 id="variables-en-las-macros">Variables en las macros</h1>
+<p>A nivel de pagina podemos definir variables globales para el documento, añadiendo en el encabezado:</p>
+<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>---
+<a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>title: Macros 
+<a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>description: Explicacion de las macros
+<a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>
+<a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>variableA: valueA
+<a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a>variableList: ["valorA", "valorB", "valorC"]
+<a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="gu">variableListObjects: [{"name":"Luis"}, {"name":"Juan"}, {"name":"Maria"}]</span>
+<a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="gu">---</span>
+</code></pre></div>
+Podemos usar esas variables asi:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>La variable A es {{ variableA }}
+</code></pre></div>
+Resultado:</p>
+<p>La variable A es mi super value A</p>
+<p>y blucles for:
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a>&lt;ul&gt;
+<a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a>
+<a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>{% for variable in variableList %}
+<a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a>    &lt;li&gt;{{ variable|e }}&lt;/li&gt;
+<a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a>{% else %}
+<a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a>    &lt;li&gt;&lt;em&gt;no users found&lt;/em&gt;&lt;/li&gt;
+<a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a>{% endfor %}
+<a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a>&lt;/ul&gt;
+</code></pre></div></p>
+<ul>
+<li>valorA</li>
+<li>valorB</li>
+<li>valorC</li>
+</ul>
+<p>Bucles con objetos
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>&lt;ul&gt;
+<a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a>{% for person in variableListObjects %}
+<a href="#__codelineno-9-3" id="__codelineno-9-3" name="__codelineno-9-3"></a>    &lt;li&gt;{{ person.name|e }}&lt;/li&gt;
+<a href="#__codelineno-9-4" id="__codelineno-9-4" name="__codelineno-9-4"></a>{% else %}
+<a href="#__codelineno-9-5" id="__codelineno-9-5" name="__codelineno-9-5"></a>    &lt;li&gt;&lt;em&gt;no persons found&lt;/em&gt;&lt;/li&gt;
+<a href="#__codelineno-9-6" id="__codelineno-9-6" name="__codelineno-9-6"></a>{% endfor %}
+<a href="#__codelineno-9-7" id="__codelineno-9-7" name="__codelineno-9-7"></a>&lt;/ul&gt;
+</code></pre></div></p>
+<ul>
+<li>Luis</li>
+<li>Juan</li>
+<li>Maria</li>
+</ul>
+<h1 id="definiendo-macros-en-ficheros-externos">Definiendo macros en ficheros externos</h1>
+<p>Importamos todas las funciones de la macro bajo el alias simple_macros
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>{% import 'simple.macros' as simple_macros %}
+<a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a>
+<a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a>{{simple_macros.createTable([{"name":"Pedri"}, {"name":"Maribel"}, {"name":"Marisa"}])}}
+</code></pre></div>
+Resultado:</p>
+<table>
+<tr>
+<td>Pedri</td>
+</tr>
+<tr>
+<td>Maribel</td>
+</tr>
+<tr>
+<td>Marisa</td>
+</tr>
+</table>
+<h1 id="podemos-utilizar-los-plugins-de-mkdocs-en-nuestra-macros">Podemos utilizar los plugins de mkdocs en nuestra macros</h1>
+<p>Importamos todas las funciones de la macro bajo el alias simple_macros
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>Creamos una nueva macro que haga uso de tabs
+<a href="#__codelineno-11-2" id="__codelineno-11-2" name="__codelineno-11-2"></a>
+<a href="#__codelineno-11-3" id="__codelineno-11-3" name="__codelineno-11-3"></a>{% macro createPersonsTabs(persons) %}
+<a href="#__codelineno-11-4" id="__codelineno-11-4" name="__codelineno-11-4"></a>    {% for person in persons %}
+<a href="#__codelineno-11-5" id="__codelineno-11-5" name="__codelineno-11-5"></a>=== "{{ person.name }}"
+<a href="#__codelineno-11-6" id="__codelineno-11-6" name="__codelineno-11-6"></a>
+<a href="#__codelineno-11-7" id="__codelineno-11-7" name="__codelineno-11-7"></a>    My name is {{ person.name|e }} .
+<a href="#__codelineno-11-8" id="__codelineno-11-8" name="__codelineno-11-8"></a>    {% if person.name == 'Pedri' %}
+<a href="#__codelineno-11-9" id="__codelineno-11-9" name="__codelineno-11-9"></a>    :man_raising_hand: I like {{ person.hobbies|e }}
+<a href="#__codelineno-11-10" id="__codelineno-11-10" name="__codelineno-11-10"></a>    {% elif person.name == 'Maribel' %}
+<a href="#__codelineno-11-11" id="__codelineno-11-11" name="__codelineno-11-11"></a>    :grinning: I like {{ person.hobbies|e }}
+<a href="#__codelineno-11-12" id="__codelineno-11-12" name="__codelineno-11-12"></a>    {% else %}
+<a href="#__codelineno-11-13" id="__codelineno-11-13" name="__codelineno-11-13"></a>    I like {{ person.hobbies|e }} and hate other persons.
+<a href="#__codelineno-11-14" id="__codelineno-11-14" name="__codelineno-11-14"></a>    {% endif %}
+<a href="#__codelineno-11-15" id="__codelineno-11-15" name="__codelineno-11-15"></a>
+<a href="#__codelineno-11-16" id="__codelineno-11-16" name="__codelineno-11-16"></a>    {% endfor %}
+<a href="#__codelineno-11-17" id="__codelineno-11-17" name="__codelineno-11-17"></a>{% endmacro %}
+<a href="#__codelineno-11-18" id="__codelineno-11-18" name="__codelineno-11-18"></a>
+<a href="#__codelineno-11-19" id="__codelineno-11-19" name="__codelineno-11-19"></a>
+<a href="#__codelineno-11-20" id="__codelineno-11-20" name="__codelineno-11-20"></a>La importamos 
+<a href="#__codelineno-11-21" id="__codelineno-11-21" name="__codelineno-11-21"></a>
+<a href="#__codelineno-11-22" id="__codelineno-11-22" name="__codelineno-11-22"></a>{% import 'simple.macros' as simple_macros %}
+<a href="#__codelineno-11-23" id="__codelineno-11-23" name="__codelineno-11-23"></a>
+<a href="#__codelineno-11-24" id="__codelineno-11-24" name="__codelineno-11-24"></a>La usamos
+<a href="#__codelineno-11-25" id="__codelineno-11-25" name="__codelineno-11-25"></a>
+<a href="#__codelineno-11-26" id="__codelineno-11-26" name="__codelineno-11-26"></a>{{simple_macros.createPersonsTabs([{"name":"Pedri", "hobbies":"sing, jump"}, {"name":"Maribel", "hobbies":"Play Guitar"}, {"name":"Marisa", "hobbies":"Listen to Judas Priest"}])}}
+</code></pre></div>
+Resultado:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><input id="__tabbed_1_3" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Pedri</label><label for="__tabbed_1_2">Maribel</label><label for="__tabbed_1_3">Marisa</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>My name is Pedri .</p>
+<p><img alt="🙋‍♂️" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f64b-200d-2642-fe0f.svg" title=":man_raising_hand:"> I like sing, jump</img></p>
+</div>
+<div class="tabbed-block">
+<p>My name is Maribel .</p>
+<p><img alt="😀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@14.1.2/assets/svg/1f600.svg" title=":grinning:"> I like Play Guitar</img></p>
+</div>
+<div class="tabbed-block">
+<p>My name is Marisa .</p>
+<p>I like Listen to Judas Priest and hate other persons.</p>
+</div>
+</div>
+</input></input></input></div>
+<h1 id="ejemplo-usando-piechart">Ejemplo usando PieChart</h1>
+<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>{% macro createPersonsChartPie(persons) %}
+<a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="sb">    ```mermaid</span>
+<a href="#__codelineno-12-3" id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="s">    pie title How are the best voted person?</span>
+<a href="#__codelineno-12-4" id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="s">        {% for person in persons %}</span>
+<a href="#__codelineno-12-5" id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="s">        "{{ person.name|e }}" : {{ person.voted|e }}</span>
+<a href="#__codelineno-12-6" id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="s">        {% endfor %}</span>
+<a href="#__codelineno-12-7" id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="sb">    ```</span>
+<a href="#__codelineno-12-8" id="__codelineno-12-8" name="__codelineno-12-8"></a>{% endmacro %}
+<a href="#__codelineno-12-9" id="__codelineno-12-9" name="__codelineno-12-9"></a>
+<a href="#__codelineno-12-10" id="__codelineno-12-10" name="__codelineno-12-10"></a>{% import 'simple.macros' as simple_macros %}
+<a href="#__codelineno-12-11" id="__codelineno-12-11" name="__codelineno-12-11"></a>
+<a href="#__codelineno-12-12" id="__codelineno-12-12" name="__codelineno-12-12"></a>{{simple_macros.createPersonsChartPie([{"name":"Pedri", "voted":15}, {"name":"Maribel", "voted":65}, {"name":"Marisa", "voted":20}])}}
+</code></pre></div>
+Resultado:</p>
+<div class="mermaid">pie title How are the best voted person?
+
+    "Pedri" : 15
+
+    "Maribel" : 65
+
+    "Marisa" : 20
+</div>
+</article>
+</div>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+        Copyright © 2016 - 2023 test site
+      </div>
+    
+    
+      Made with
+      <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+        Material for MkDocs Sobre escrito en la carpeta overrides/partias/copyrigth
+      </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<div class="md-consent" data-md-component="consent" hidden="" id="__consent">
+<div class="md-consent__overlay"></div>
+<aside class="md-consent__inner">
+<form class="md-consent__form md-grid md-typeset" name="consent">
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" id="__settings" type="checkbox"/>
+<div class="md-consent__settings">
+<ul class="task-list">
+</ul>
+</div>
+<div class="md-consent__controls">
+<button class="md-button md-button--primary">Aceptar</button>
+<label class="md-button" for="__settings">Gestionar cookies</label>
+</div>
+</form>
+</aside>
+</div>
+<script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.expand", "header.autohide"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}}</script>
+<script src="../../assets/javascripts/bundle.6c14ae12.min.js"></script>
+<script src="../../js/mkdocs-charts-plugin.js"></script>
+<script src="../../runtime_assets/javascript/custom_functions.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({
+    theme: "dark",
+    themeVariables: {
+        primaryColor: "#BB2528",
+        primaryTextColor: "#fff",
+        primaryBorderColor: "#7C0000",
+        lineColor: "#F8B229",
+        secondaryColor: "#006100",
+        tertiaryColor: "#fff"
+    }
+});</script></body>
+</html>

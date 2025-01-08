@@ -25,8 +25,7 @@ function formatJsonToCorrectMDAcceptedCharts(notice){
     notice.content=notice.content.replaceAll(":", "").replaceAll("&nbsp;","");
     notice.content= decodeHtml(notice.content);
 
-    notice.contentSnippet=notice.contentSnippet.replaceAll(":", "").replaceAll('"', '');
-    notice.contentSnippet= decodeHtml(notice.contentSnippet);
+
 
 }
 

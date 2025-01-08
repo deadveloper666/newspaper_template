@@ -3,6 +3,7 @@ const glob = require( 'glob' ); //https://github.com/isaacs/node-glob
 let ejs = require('ejs');
 let processorDefault = require('./default/processor');
 let processorMarca = require('./marca/processor');
+let processorYouTubeGolTV = require('./youtubeGolTv/processor');
 
 
 
@@ -33,8 +34,11 @@ let cardsTemplate =
 
 <% items.forEach(function(item){ %>
 - title: <%= item.title %>
-  content: <%= item.contentSnippet %>
+  content: <%= item.content %>
+  <% if (item.image!=null) { %>
   image: <%= item.image %>
+  <% } %>
+  
 <% }); %>
 
 ::/cards::
@@ -72,6 +76,8 @@ function createCards(news){
     news.forEach((notice)=>{
       if(notice.provider=="Marca"){
         processorMarca.process(notice);
+      }else if(notice.provider=="YouTubeGolTV"){
+        processorYouTubeGolTV.process(notice);
       }else{
         processorDefault.process(notice);
       }

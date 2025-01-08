@@ -1,15 +1,16 @@
 {
     "sourceFeeds": [
         {
-            "url": "https://e00-marca.uecdn.es/rss/futbol/primera-division.xml",
-            "provider":"Marca",
-            "category": "Ajedrez"
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWw6r_yGcl7fC0bShxOYhWg",
+            "provider":"YouTubeGolTV",
+            "category": "Futbol"
         },
         {
-            "url": "https://e00-marca.uecdn.es/rss/futbol/segunda-division.xml",
-            "provider":"Marca",
-            "category": "Futbol"
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWJ2lWNubArHWmf3FIHbfcQ",
+            "provider":"NBA",
+            "category": "NBA"
         }
+        
     ]
 
 }

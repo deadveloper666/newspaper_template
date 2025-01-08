@@ -24,6 +24,7 @@ theme:
     - navigation.expand
   #  - navigation.tabs
     - header.autohide  # Collapse menu on scrolling
+    - navigation.path
 extra_css:
   # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
   - runtime_assets/css/extra.css
@@ -124,13 +125,13 @@ plugins:
 #      glob:
 #        - _include/*        
   # - git-authors  Solo valido si esta linkeado a repositorio github
-nav:
-  - Home: nav/index.md
-  - Neoteroi Examples: nav/neoteori_examples/index.md
-  - Media Examples: nav/media_embeded/index.md
-  - Trabajando con Macros: nav/macros/index.md
-  - Ejemplos: nav/examples/index.md        
-  - NewsPapper: nav/newspaper/index.md        
+# nav:
+#   - Home: nav/index.md
+#   - Neoteroi Examples: nav/neoteori_examples/index.md
+#   - Media Examples: nav/media_embeded/index.md
+#   - Trabajando con Macros: nav/macros/index.md
+#   - Ejemplos: nav/examples/index.md        
+#   - NewsPapper: nav/newspaper/index.md        
 
   
 
