@@ -25,6 +25,23 @@ case $ACTION in
         node ./rss_Reader/src/jsonToMd.js $PWD/build_tmp/data $PWD/build_tmp/md
         echo "* - SUCCESS"
 		;;
+    "acceptMDtoMkdocs")
+        echo "*************************************************"
+		echo "* - Moving generated Md to mkdocs src..."
+        echo "* "
+        
+        for dir in ./build_tmp/md/*/     # list directories in the form "/tmp/dirname/"
+        do
+            dir=${dir%*/}      # remove the trailing "/"
+            sectionDirName="${dir##*/}"    # print everything after the final "/"
+            echo $sectionDirName
+
+            mv -f ./build_tmp/md/$sectionDirName/* mkdocs/docs/$sectionDirName
+
+        done
+
+        echo "* - SUCCESS"
+		;;        
     "stop")
         echo 'Stoppping Local mkdocs server...'
         STATUS=$(curl -s http://localhost:$LOCAL_PORT)
