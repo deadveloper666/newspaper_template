@@ -2,12 +2,12 @@
     "sourceFeeds": [
         {
             "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWw6r_yGcl7fC0bShxOYhWg",
-            "provider":"YouTubeGolTV",
+            "provider":"YouTubeChannel",
             "category": "Futbol"
         },
         {
             "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWJ2lWNubArHWmf3FIHbfcQ",
-            "provider":"NBA",
+            "provider":"YouTubeChannel",
             "category": "NBA"
         }
         

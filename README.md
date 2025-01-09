@@ -50,3 +50,10 @@ Ahora podemos usar el script
 
 cd mkdocs
 ./documentationServer.sh assemble para generar la carpeta /site
+
+
+
+# Mviendo los Md generados al mkdocs source
+
+
+mv -f ./build_tmp/md mkdocs/docs

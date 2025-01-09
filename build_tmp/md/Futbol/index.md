@@ -2,6 +2,11 @@
 ::cards::  cols=15
 
 
+- title: 👀 "Estamos encantados con Vinícius en todos los aspectos", Ancelotti #shorts
+  content: <div class="nt-card-image tags" ><iframe src="https://www.youtube.com/embed/s1xXh_9aeCM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="450" height="350" frameborder="0"></iframe></div>
+  
+  
+
 - title: 😳 "De no estar en el FC Barcelona, me pensaría fichar por el club", Raphinha #shorts
   content: <div class="nt-card-image tags" ><iframe src="https://www.youtube.com/embed/fki0PDjPDXA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="450" height="350" frameborder="0"></iframe></div>
   
@@ -69,11 +74,6 @@
 
 - title: 💥 Marcos Gallego la recibe en el centro del campo, hace un eslalon... ¡y para dentro! #shorts
   content: <div class="nt-card-image tags" ><iframe src="https://www.youtube.com/embed/nZlF9WyTBLc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="450" height="350" frameborder="0"></iframe></div>
-  
-  
-
-- title: RESUMEN CUARTOS DE FINAL LALIGA FUTURES
-  content: <div class="nt-card-image tags" ><iframe src="https://www.youtube.com/embed/KFA0mUtJ0tY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="450" height="350" frameborder="0"></iframe></div>
   
   
 

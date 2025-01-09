@@ -76,7 +76,7 @@ function createCards(news){
     news.forEach((notice)=>{
       if(notice.provider=="Marca"){
         processorMarca.process(notice);
-      }else if(notice.provider=="YouTubeGolTV"){
+      }else if(notice.provider=="YouTubeChannel"){
         processorYouTubeGolTV.process(notice);
       }else{
         processorDefault.process(notice);
