@@ -27,8 +27,7 @@ function formatJsonToCorrectMDAcceptedCharts(notice){
   
     notice.title=notice.title.replaceAll(":", "").replaceAll("&nbsp;","");
     notice.title= decodeHtml(notice.title);
-    let videoId = notice.link.split("v=")[1];
-    notice.content='<div class="nt-card-image tags" ><iframe src="https://www.youtube.com/embed/'+videoId+'" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" width="450" height="350" frameborder="0"></iframe></div>';
+    notice.content='<div class="nt-card-image tags">'+notice.content+'</div>';
     
     //No notice.image
 }
@@ -39,7 +38,7 @@ function getImageIfNeeded(notice){
 }
 
 function getModifiedContent(notice){
-  notice.contentSnippet=imageProvider.getContent(notice.contentSnippet);
+ // notice.contentSnippet=imageProvider.getContent(notice.contentSnippet);
   return notice;
 }
 
