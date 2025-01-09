@@ -40,20 +40,16 @@ A partir de los json que se han generado a partir de la info de la fuente RSS, p
 
 En este paso habremos obtenido los MD en la carpeta build_tmp/md , podemos coger cualquier archivo MD generado y meterlo dentro del mkdocs site.
 
-Por ejemplo estoy cogiendo el contenido de build_tmp/md/Futbol/index.md y lo estoy copiando dentro de mkdocs/docs/nav/newspapser/index.md 
+Si queremos hacerlo todo, podemos utilizar el siguiente comando
 
-y navego a la web y veo el contenido
+# Moviendo los Md generados al mkdocs source
 
+Esto movera los md generados que esta en data dentro del directorio de trabajo de mkdocs/docs
+
+./generator.sh acceptMDtoMkdocs
 
 # GENERANDO EL SITE ESTATICO 
 Ahora podemos usar el script 
 
 cd mkdocs
 ./documentationServer.sh assemble para generar la carpeta /site
-
-
-
-# Mviendo los Md generados al mkdocs source
-
-
-mv -f ./build_tmp/md mkdocs/docs

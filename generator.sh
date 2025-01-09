@@ -35,6 +35,11 @@ case $ACTION in
             dir=${dir%*/}      # remove the trailing "/"
             sectionDirName="${dir##*/}"    # print everything after the final "/"
             echo $sectionDirName
+            # if category base folder does not exists, create it
+            if [ ! -d "mkdocs/docs/$sectionDirName" ]; then
+                echo "mkdocs/docs/$sectionDirName does not exist."
+                mkdir mkdocs/docs/$sectionDirName
+            fi
 
             mv -f ./build_tmp/md/$sectionDirName/* mkdocs/docs/$sectionDirName
 

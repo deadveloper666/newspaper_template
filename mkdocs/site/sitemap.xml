@@ -2,37 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://www.test_site.com/</loc>
-         <lastmod>2024-02-21</lastmod>
+         <lastmod>2025-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.test_site.com/nav/</loc>
-         <lastmod>2024-02-21</lastmod>
+         <loc>https://www.test_site.com/Futbol/</loc>
+         <lastmod>2025-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.test_site.com/nav/examples/</loc>
-         <lastmod>2024-02-21</lastmod>
+         <loc>https://www.test_site.com/Futbol/2024-02-21/</loc>
+         <lastmod>2025-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.test_site.com/nav/macros/</loc>
-         <lastmod>2024-02-21</lastmod>
+         <loc>https://www.test_site.com/Futbol/2024-02-22/</loc>
+         <lastmod>2025-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.test_site.com/nav/media_embeded/</loc>
-         <lastmod>2024-02-21</lastmod>
+         <loc>https://www.test_site.com/Futbol/2024-05-20/</loc>
+         <lastmod>2025-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.test_site.com/nav/neoteori_examples/</loc>
-         <lastmod>2024-02-21</lastmod>
+         <loc>https://www.test_site.com/Futbol/2025-01-08/</loc>
+         <lastmod>2025-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://www.test_site.com/nav/newspaper/</loc>
-         <lastmod>2024-02-21</lastmod>
+         <loc>https://www.test_site.com/Futbol/2025-01-09/</loc>
+         <lastmod>2025-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.test_site.com/NBA/</loc>
+         <lastmod>2025-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.test_site.com/NBA/2025-01-08/</loc>
+         <lastmod>2025-01-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://www.test_site.com/NBA/2025-01-09/</loc>
+         <lastmod>2025-01-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

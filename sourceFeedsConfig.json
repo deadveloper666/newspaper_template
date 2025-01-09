@@ -1,14 +1,9 @@
 {
     "sourceFeeds": [
         {
-            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWw6r_yGcl7fC0bShxOYhWg",
-            "provider":"YouTubeChannel",
-            "category": "Futbol"
-        },
-        {
-            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWJ2lWNubArHWmf3FIHbfcQ",
-            "provider":"YouTubeChannel",
-            "category": "NBA"
+            "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
+            "provider":"ElPais",
+            "category": "Actualidad"
         }
         
     ]

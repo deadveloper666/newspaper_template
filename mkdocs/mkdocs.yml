@@ -23,8 +23,11 @@ theme:
     - navigation.tabs
     - navigation.expand
   #  - navigation.tabs
-    - header.autohide  # Collapse menu on scrolling
+  #  - header.autohide  # Collapse menu on scrolling
     - navigation.path
+    - navigation.tabs.sticky
+    - navigation.indexes # Hace que el index no apareza en submenu
+    - navigation.top # Pone el boton de volver arriba
 extra_css:
   # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
   - runtime_assets/css/extra.css

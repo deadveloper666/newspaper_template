@@ -3,7 +3,8 @@ const glob = require( 'glob' ); //https://github.com/isaacs/node-glob
 let ejs = require('ejs');
 let processorDefault = require('./default/processor');
 let processorMarca = require('./marca/processor');
-let processorYouTubeGolTV = require('./youtubeGolTv/processor');
+let youtubeChannel = require('./youtubeChannel/processor');
+let elPaisProcessor = require('./elpais/processor');
 
 
 
@@ -77,7 +78,9 @@ function createCards(news){
       if(notice.provider=="Marca"){
         processorMarca.process(notice);
       }else if(notice.provider=="YouTubeChannel"){
-        processorYouTubeGolTV.process(notice);
+        youtubeChannel.process(notice);
+      }else if(notice.provider=="ElPais"){
+        elPaisProcessor.process(notice);
       }else{
         processorDefault.process(notice);
       }
