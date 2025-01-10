@@ -14,7 +14,19 @@
             "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
             "provider":"ElPais",
             "category": "Actualidad"
+        },
+        {
+            "url": "https://www.sport.es/es/rss/champions-league/rss.xml",
+            "provider":"Sport",
+            "category": "Futbol_Internacional"
+        },
+        {
+            "url": "https://feeds.as.com/mrss-s/pages/as/site/as.com/section/baloncesto/subsection/acb/",
+            "provider":"As",
+            "category": "Baloncesto"
         }
+
+        
         
     ]
 

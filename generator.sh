@@ -37,8 +37,8 @@ case $ACTION in
             echo $sectionDirName
             # if category base folder does not exists, create it
             if [ ! -d "mkdocs/docs/$sectionDirName" ]; then
-                echo "mkdocs/docs/$sectionDirName does not exist."
-                mkdir mkdocs/docs/$sectionDirName
+                echo "mkdocs/docs/$sectionDirName does not exist. Creating this new Section."
+                mkdir "mkdocs/docs/$sectionDirName"
             fi
 
             mv -f ./build_tmp/md/$sectionDirName/* mkdocs/docs/$sectionDirName

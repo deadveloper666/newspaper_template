@@ -1,10 +1,42 @@
 {
     "sourceFeeds": [
         {
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWw6r_yGcl7fC0bShxOYhWg",
+            "provider":"YouTubeChannel",
+            "category": "Futbol"
+        },
+        {
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWJ2lWNubArHWmf3FIHbfcQ",
+            "provider":"YouTubeChannel",
+            "category": "NBA"
+        },
+        {
             "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
             "provider":"ElPais",
             "category": "Actualidad"
-        }
+        },
+        {
+            "url": "https://www.sport.es/es/rss/champions-league/rss.xml",
+            "provider":"Sport",
+            "category": "Futbol_Internacional"
+        },
+        {
+            "url": "https://feeds.as.com/mrss-s/pages/as/site/as.com/section/baloncesto/subsection/acb/",
+            "provider":"as",
+            "category": "Baloncesto"
+        },
+        {
+            "url": "https://feeds.as.com/mrss-s/list/as/site/as.com/tag/boxeo_a/",
+            "provider":"as",
+            "category": "Boxeo"
+        },
+        {
+            "url": "http://feeds.feedburner.com/redadn",
+            "provider":"feedburner",
+            "category": "Gaming"
+        }  
+        
+        
         
     ]
 

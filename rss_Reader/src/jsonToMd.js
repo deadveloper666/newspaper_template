@@ -5,6 +5,10 @@ let processorDefault = require('./default/processor');
 let processorMarca = require('./marca/processor');
 let youtubeChannel = require('./youtubeChannel/processor');
 let elPaisProcessor = require('./elpais/processor');
+let sportProcessor = require('./sport/processor');
+let asProcessor = require('./as/processor');
+let feedburnerProcessor = require('./feedburner/processor');
+
 
 
 
@@ -81,6 +85,12 @@ function createCards(news){
         youtubeChannel.process(notice);
       }else if(notice.provider=="ElPais"){
         elPaisProcessor.process(notice);
+      }else if(notice.provider=="Sport"){
+        sportProcessor.process(notice);
+      }else if(notice.provider=="as"){
+        asProcessor.process(notice);
+      }else if(notice.provider=="feedburner"){
+        feedburnerProcessor.process(notice);
       }else{
         processorDefault.process(notice);
       }

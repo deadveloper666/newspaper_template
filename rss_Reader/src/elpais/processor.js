@@ -3,7 +3,7 @@
 let imageProvider = require('../imageProvider');
 
 /**
- * Processor customizer for You Tube Gol TV channel feeds
+ * Processor customizer for El pais  feeds
  * 
  * Notice must have the fields:
  *    -title
@@ -27,8 +27,9 @@ function formatJsonToCorrectMDAcceptedCharts(notice){
   
     notice.title=notice.title.replaceAll(":", "").replaceAll("&nbsp;","");
     notice.title= decodeHtml(notice.title);
-    notice.content='<div class="nt-card-image tags">'+notice.content+'</div>';
-    
+    var _formatedContent = decodeHtml(notice['content:encoded']);
+    notice.content='<div class="tags">'+_formatedContent+'</div>';
+    notice.content=notice.content.replaceAll(" : ", ",").replaceAll(": ", ",").replaceAll("&nbsp;","");
     //No notice.image
 }
 
@@ -51,6 +52,22 @@ function decodeHtml(str) {
     str=str.replaceAll('&#39;',"'");
     str=str.replaceAll('&quot;','&');
     str=str.replaceAll('&#34;','"');
+    str=str.replaceAll('\n',' ');
+    
+    str=str.replaceAll('&oacute;','ó');
+    str=str.replaceAll('&ldquo;','');
+    str=str.replaceAll('&rdquo;','');
+    str=str.replaceAll('&aacute;','á');
+    str=str.replaceAll('&iacute;','í');
+    str=str.replaceAll('&uacute;','ú');
+    str=str.replaceAll('&ntilde;','ñ');
+    str=str.replaceAll('&oacute;','ó');
+    str=str.replaceAll('&eacute;','é');
+    str=str.replaceAll('&eacute;','é');
+    str=str.replaceAll('&ordm;','º');
+    
+    
+    
     
   
     return str;
