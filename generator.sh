@@ -18,6 +18,16 @@ case $ACTION in
         
         echo "* - SUCCESS"
 		;;
+	"webscrapping")
+        echo "*************************************************"
+		echo "* - Webscrapping..."
+        echo "* "
+        #cd ./rss_Reader/src
+        #echo $PWD
+        node ./webscrapper/src/webscrap.js  $PWD/sourceFeedsConfig.json $PWD/build_tmp/data
+        
+        echo "* - SUCCESS"
+		;;        
     "generateMD")
         echo "*************************************************"
 		echo "* - Generating MD from JSON data..."

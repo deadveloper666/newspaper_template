@@ -33,6 +33,11 @@ Utilizamos el script  generator.sh indicando cual es la url del feed y el archiv
 
 ./generator.sh fetchRSS 
 
+## 1.1. Webscrapping
+Utilizamos el script  generator.sh indicando cual es la url del y el archivo de salida (json)
+
+./generator.sh webscrapping 
+
 ## 1.2 Generando los MD
 A partir de los json que se han generado a partir de la info de la fuente RSS, podemos generar el MD correspondiente.
 
