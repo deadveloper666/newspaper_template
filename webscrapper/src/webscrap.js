@@ -50,7 +50,8 @@ function parseData(html){
             if(curretTag.prop("tagName") == "A"){
                 contador++;
                 dias[contador]={
-                    "titulo": curretTag.find("h3").text(),
+                    "provider": "futbolenlatele",
+                    "title": curretTag.find("h3").text(),
                     "partidos": []
                 }
             } 

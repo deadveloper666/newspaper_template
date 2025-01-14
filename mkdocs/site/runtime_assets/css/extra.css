@@ -12,3 +12,9 @@
     background-color: #060404;
 }
 }
+
+/** Center content at div**/
+.center_content{
+    width: 100%;
+    text-align: center;
+}

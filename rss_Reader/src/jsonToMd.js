@@ -8,6 +8,7 @@ let elPaisProcessor = require('./elpais/processor');
 let sportProcessor = require('./sport/processor');
 let asProcessor = require('./as/processor');
 let feedburnerProcessor = require('./feedburner/processor');
+let futbolenlateleProcessor = require('./futbolenlatele/processor');
 
 
 
@@ -91,6 +92,8 @@ function createCards(news){
         asProcessor.process(notice);
       }else if(notice.provider=="feedburner"){
         feedburnerProcessor.process(notice);
+      }else if(notice.provider=="futbolenlatele"){
+        futbolenlateleProcessor.process(notice);
       }else{
         processorDefault.process(notice);
       }

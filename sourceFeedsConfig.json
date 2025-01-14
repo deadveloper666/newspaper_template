@@ -2,6 +2,7 @@
     "sourceFeeds": [
         {
             "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWw6r_yGcl7fC0bShxOYhWg",
+            "provider_id": "Gol Play",
             "provider":"YouTubeChannel",
             "category": "Futbol"
         },
