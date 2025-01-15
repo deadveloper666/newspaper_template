@@ -11,12 +11,6 @@ let feedburnerProcessor = require('./feedburner/processor');
 let futbolenlateleProcessor = require('./futbolenlatele/processor');
 
 
-
-
-
-
-
-
 //PARAMS
 var args = process.argv.slice(2);
 console.log("los argumentos son "+ args);
@@ -27,8 +21,6 @@ console.log("Loading data from  "+  source_data_root_path);
 
 let output_md_root_path=args[1];
 console.log("Output directory  "+  output_md_root_path);
-
-
 
 
 
@@ -84,7 +76,7 @@ function createCards(news){
         processorMarca.process(notice);
       }else if(notice.provider=="YouTubeChannel"){
         youtubeChannel.process(notice);
-      }else if(notice.provider=="ElPais"){
+      }else if(notice.provider=="elpais"){
         elPaisProcessor.process(notice);
       }else if(notice.provider=="Sport"){
         sportProcessor.process(notice);

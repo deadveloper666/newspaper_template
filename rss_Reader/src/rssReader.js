@@ -11,8 +11,8 @@ var sourceFeedConfig = require(args[0]);
 let output_root_path=args[1];
 console.log(sourceFeedConfig.sourceFeeds);
 
-
-let outputFiles = ["index.json", new Date().toISOString().split('T')[0]+".json"];
+//let outputFiles = ["index.json", new Date().toISOString().split('T')[0]+".json"];
+let outputFiles = [ new Date().toISOString().split('T')[0]+".json"];
 
 
 /**Main Entrance */
@@ -43,7 +43,7 @@ function processFeeds(feedsConfig){
   
     /** Output to JSON FILE */
     outputFiles.forEach(fileName =>{
-      writeFile(output_root_path+"/"+feedConfig.category, fileName,feed.items );
+      writeFile(output_root_path+"/"+feedConfig.provider_id, fileName,feed.items );
     });
 }
 

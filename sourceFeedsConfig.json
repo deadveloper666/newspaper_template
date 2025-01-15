@@ -2,43 +2,53 @@
     "sourceFeeds": [
         {
             "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWw6r_yGcl7fC0bShxOYhWg",
-            "provider_id": "Gol Play",
+            "provider_id": "YTB_Gol_Play",
             "provider":"YouTubeChannel",
             "category": "Futbol"
         },
         {
             "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWJ2lWNubArHWmf3FIHbfcQ",
+            "provider_id": "YTB_NBA",
             "provider":"YouTubeChannel",
-            "category": "NBA"
+            "category": "Baloncesto"
+        },
+        
+        {
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCWXYAGB9SadlL6p5Bb66wWw",
+            "provider_id": "YTB_PremierBoxingChampions",
+            "provider":"YouTubeChannel",
+            "category": "Boxeo"
         },
         {
             "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
-            "provider":"ElPais",
+            "provider_id":"RSS_ElPais.com",
+            "provider":"elpais",
             "category": "Actualidad"
         },
         {
             "url": "https://www.sport.es/es/rss/champions-league/rss.xml",
-            "provider":"Sport",
+            "provider_id":"RSS_Sport_champions_league.es",
+            "provider":"sport",
             "category": "Futbol_Internacional"
         },
         {
             "url": "https://feeds.as.com/mrss-s/pages/as/site/as.com/section/baloncesto/subsection/acb/",
+            "provider_id":"RSS_As_Acb.com",
             "provider":"as",
             "category": "Baloncesto"
         },
         {
             "url": "https://feeds.as.com/mrss-s/list/as/site/as.com/tag/boxeo_a/",
+            "provider_id":"RSS_As_Boxeo.com",
             "provider":"as",
             "category": "Boxeo"
         },
         {
             "url": "http://feeds.feedburner.com/redadn",
+            "provider_id":"RSS_feedburner.com",
             "provider":"feedburner",
             "category": "Gaming"
         }  
-        
-        
-        
     ]
 
 }

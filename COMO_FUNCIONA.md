@@ -61,8 +61,22 @@ Ejemplo de configuracion de periodico:
             ]
         }
     }
-
 }
+
+# Objetivo 1
+Hacer 3 periodicos,
+
+todoboxeo.com : 
+- Saca noticias leidas de boxeo
+- Saca youtubeembeded 
+- Saca informacion de eventos de boxeo
+- Tiene seccion del Tiempo en españa
+
+
+
+
+
+
 
 
 

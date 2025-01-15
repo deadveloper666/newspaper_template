@@ -2,6 +2,7 @@
     "sourceSites": [
         {
             "url": "https://futbolenlatele.com",
+            "provider_id":"WSC_futbolenlatele.com",
             "provider":"futbolenlatele",
             "category": "futbolenlatele"
         }

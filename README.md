@@ -19,6 +19,9 @@ curl --silent "https://www.youtube.com/c/@NBA/videos" |\
 
 y el id es UCWJ2lWNubArHWmf3FIHbfcQ
 
+
+
+
 (ahora puedo meterlo como entrada en el sourceFeedsConfig.json y se procesara)
 
 # Source channels ya verificados:
