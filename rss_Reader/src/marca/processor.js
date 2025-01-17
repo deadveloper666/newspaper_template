@@ -12,6 +12,7 @@ exports.process = function(notice) {
     formatJsonToCorrectMDAcceptedCharts(notice);
     getImageIfNeeded(notice);
     getModifiedContent(notice);
+    return notice;
 };
 
 

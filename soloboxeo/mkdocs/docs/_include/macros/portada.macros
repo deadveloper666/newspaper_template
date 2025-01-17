@@ -1,0 +1,79 @@
+{% macro createCabecera(noticia) %}
+# Lo mas destacado
+::cards::  cols=1 image-bg
+
+- title: {{ noticia.title }}
+  content: |
+    {{ noticia.content }}
+  url: https://en.wikipedia.org/wiki/Zeus
+  image: {{noticia.image}}
+
+::/cards::
+{% endmacro %}
+
+
+
+{% macro largeNoticeA(noticia) %}
+## {{ noticia.title }}
+
+{{noticia.content}}.
+
+
+{% endmacro %}
+
+
+
+
+{% macro treeHorizontal(notices) %}
+# ULTIMAS NOTICIAS
+::cards::  cols=3
+
+    {% for notice in notices %}
+
+- title: {{ notice.title }}
+  content: |
+    {{ notice.content }}
+  image: {{ notice.image }}
+  url: https://en.wikipedia.org/wiki/Zeus
+
+
+    {% endfor %}
+
+::/cards::
+{% endmacro %}
+
+
+{% macro lastVideosRow(cols, notices) %}
+# Ultimos Videos
+
+::cards::  cols={{cols}}
+
+    {% for notice in notices %}
+
+- title: {{ notice.videoTitle }}
+  content: |
+    <div class="embed-youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/{{ notice.videoId }}" title="{{ notice.videoTitle }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    {% endfor %}
+
+::/cards::
+{% endmacro %}
+
+
+
+{% macro advertisingTypeA(advertising) %}
+![publicity 1]({{advertising.image}})
+{% endmacro %}
+
+
+{% macro youtubeVideo(videoId, videoTitle) %}
+
+::cards::  cols=1 image-bg
+
+- title: {{ videoTitle }}
+  content: |
+    <div class="embed-youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/{{ videoId }}" title="{{ videoTitle }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+  url: https://en.wikipedia.org/wiki/Zeus
+
+::/cards::
+
+{% endmacro %}

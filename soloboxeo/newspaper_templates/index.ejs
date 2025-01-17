@@ -1,0 +1,40 @@
+---
+title: <%= newspaper.title %> 
+description: <%= newspaper.description %> 
+cabecera: <%= newspaper.mainNotice %> 
+threeNotices: <%= newspaper.threeNotices %> 
+lastVideoNotices: <%= newspaper.lastVideoNotices %> 
+lastVideoNoticesSize: <%= newspaper.lastVideoNoticesSize %>
+advertising: <%= newspaper.advertisingA %>
+largeNoticeA: <%= newspaper.largeNoticeA %>
+youtubeEmbedNotice: <%= newspaper.videoNotice %>
+advertisingB: <%= newspaper.advertisingB %>
+---
+{% import 'portada.macros' as newspaper_macros %}
+
+# {{description}}
+
+{{newspaper_macros.createCabecera( cabecera )}}
+
+---
+
+{{newspaper_macros.lastVideosRow(lastVideoNoticesSize,lastVideoNotices )}}
+
+---
+
+{{newspaper_macros.advertisingTypeA( advertising )}}
+---
+
+{{newspaper_macros.treeHorizontal( threeNotices )}}
+
+{{newspaper_macros.largeNoticeA( largeNoticeA )}}
+
+---
+
+{{newspaper_macros.advertisingTypeA( advertisingB )}}
+
+---
+
+{{newspaper_macros.youtubeVideo(youtubeEmbedNotice.videoId, youtubeEmbedNotice.videoTitle)}}
+
+{{newspaper_macros.advertisingTypeA( advertising )}}

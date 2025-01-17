@@ -20,6 +20,13 @@
             "category": "Boxeo"
         },
         {
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCEC87l0176tT_4moFNlol2A",
+            "provider_id": "YTB_BoxingLegacy",
+            "provider":"YouTubeChannel",
+            "category": "Boxeo"
+        },
+        
+        {
             "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
             "provider_id":"RSS_ElPais.com",
             "provider":"elpais",
@@ -48,7 +55,14 @@
             "provider_id":"RSS_feedburner.com",
             "provider":"feedburner",
             "category": "Gaming"
-        }  
+        } ,
+        {
+            "url": "https://www.aemet.es/es/noticias.rss ",
+            "provider_id":"RSS_aemet.es",
+            "provider":"aemet",
+            "category": "Tiempo"
+        } 
+        
     ]
 
 }

@@ -10,13 +10,13 @@ theme:
   #name: material #bootstrap4 #gitbook  # cualquiera de https://mkdocs.github.io/mkdocs-bootswatch/
   name: material
   custom_dir: overrides
-  color_mode: auto
+  color_mode: ligth
   navigation_depth: 2
   nav_style: light # primary dark light
   sticky_navigation: true
   locale: es
   palette:
-    scheme: slate  # default (ligth white)
+    scheme: default  # default (ligth white) slate
   logo: runtime_assets/icons/logo.png
   favicon: runtime_assets/icons/logo.png
   font:

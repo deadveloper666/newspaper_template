@@ -14,13 +14,19 @@ curl --silent "https://www.youtube.com/c/@GolTelevision/videos" |\
 y el id del channel es ->	UCWw6r_yGcl7fC0bShxOYhWg
 
 Este es otro ejemplo con el canal de la @NBA
-curl --silent "https://www.youtube.com/c/@NBA/videos" |\
+curl --silent "https://www.youtube.com/c/@DAZNBoxing/videos" |\
     grep -o -P '(?<=canonical" href="https://www.youtube.com/channel/)[^"]*'
 
 y el id es UCWJ2lWNubArHWmf3FIHbfcQ
+           
 
+curl --silent "https://www.youtube.com/c/@boxingllegacy2301/videos" |\
+    grep -o -P '(?<=canonical" href="https://www.youtube.com/channel/)[^"]*'
+@fighterchannel3
 
+Tambien vas a la pagina principal del canal y buscas esta cadena
 
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEC87l0176tT_4moFNlol2A
 
 (ahora puedo meterlo como entrada en el sourceFeedsConfig.json y se procesara)
 

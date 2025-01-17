@@ -4,7 +4,11 @@
 
 /** Aqui sobreescribos estilos de material por los mios **/
 .md-header{
-    background-color: #060404;
+    background-color: red;
+}
+
+.md-tabs{
+    background-color: orangered;
 }
 
 @media screen and (max-width: 76.2344em) {
