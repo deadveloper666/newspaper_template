@@ -96,7 +96,8 @@ var newsPaperPortada = {
     lastVideoNoticesSize: 2,
     advertisingA: JSON.stringify(getRandomAdvertising()),
     largeNoticeA: JSON.stringify(getLargeNotice()),
-    threeNotices: JSON.stringify(getThreeNotices()),
+    rowNotices: JSON.stringify(getSomeNotices(2)),
+    rowNoticesSize: 2,
     videoNotice: JSON.stringify(getVideoNotice()),
     advertisingB: JSON.stringify(getRandomAdvertising())
 };
@@ -162,13 +163,13 @@ function getLargeNotice(){
  * 
  * @param {*} news 
  */
-function getThreeNotices(){
+function getSomeNotices(cantidad){
     console.log(formattedNews.length);
-    let threeNotices = [];
-    for(i=0;i<3;i++){
+    let selectedNews = [];
+    for(i=0;i<cantidad;i++){
         let randomIndex= Math.floor(Math.random() * formattedNews.length);
         console.log(randomIndex);
-        threeNotices.push(
+        selectedNews.push(
             {
                 title: formattedNews[randomIndex].title,
                 content:formattedNews[randomIndex].content,
@@ -177,7 +178,7 @@ function getThreeNotices(){
         );
         formattedNews = removeElementByIndex (formattedNews, 0);//Removes element from array to not use duplicated
     }
-    return threeNotices;
+    return selectedNews;
 }
 
 function getRandomAdvertising(){

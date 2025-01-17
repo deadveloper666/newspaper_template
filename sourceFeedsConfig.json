@@ -25,7 +25,18 @@
             "provider":"YouTubeChannel",
             "category": "Boxeo"
         },
-        
+        {
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCu6xusAl5kDmJXc9Sbr928Q",
+            "provider_id": "YTB_MotorPuntoEs",
+            "provider":"YouTubeChannel",
+            "category": "Motor"
+        },
+        {
+            "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UC46t48ZrtHBK4rEvw7PTmKQ",
+            "provider_id": "YTB_LeyendasV8Official",
+            "provider":"YouTubeChannel",
+            "category": "Motor"
+        },
         {
             "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada",
             "provider_id":"RSS_ElPais.com",
@@ -49,6 +60,12 @@
             "provider_id":"RSS_As_Boxeo.com",
             "provider":"as",
             "category": "Boxeo"
+        },
+        {
+            "url": "https://feeds.as.com/mrss-s/pages/as/site/as.com/section/motor/subsection/mas_motor/",
+            "provider_id":"RSS_As_Motor.com",
+            "provider":"as",
+            "category": "Motor"
         },
         {
             "url": "http://feeds.feedburner.com/redadn",

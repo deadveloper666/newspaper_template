@@ -1,0 +1,24 @@
+.mycustomStyle { 
+    font-size: large;
+}
+
+/** Aqui sobreescribos estilos de material por los mios **/
+.md-header{
+    background-color: red;
+}
+
+.md-tabs{
+    background-color: orangered;
+}
+
+@media screen and (max-width: 76.2344em) {
+.md-nav--primary .md-nav__title[for="__drawer"]{
+    background-color: #060404;
+}
+}
+
+/** Center content at div**/
+.center_content{
+    width: 100%;
+    text-align: center;
+}

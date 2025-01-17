@@ -1,0 +1,36 @@
+{% macro createTable(persons) %}
+<table>
+
+{% for person in persons %}
+    <tr>
+        <td>{{ person.name|e }}</td>
+    </tr>
+{% endfor %}
+</table>
+{% endmacro %}
+
+{% macro createPersonsTabs(persons) %}
+    {% for person in persons %}
+=== "{{ person.name }}"
+
+    My name is {{ person.name|e }} .
+    {% if person.name == 'Pedri' %}
+    :man_raising_hand: I like {{ person.hobbies|e }}
+    {% elif person.name == 'Maribel' %}
+    :grinning: I like {{ person.hobbies|e }}
+    {% else %}
+    I like {{ person.hobbies|e }} and hate other persons.
+    {% endif %}
+
+    {% endfor %}
+{% endmacro %}
+
+
+{% macro createPersonsChartPie(persons) %}
+```mermaid
+pie title How are the best voted person?
+    {% for person in persons %}
+    "{{ person.name|e }}" : {{ person.voted|e }}
+    {% endfor %}
+```
+{% endmacro %}

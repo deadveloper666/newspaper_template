@@ -34,6 +34,9 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCEC87l0176tT_4moFNlol2A
 GolTV resumentes de futbol: https://www.youtube.com/feeds/videos.xml?channel_id=UCWw6r_yGcl7fC0bShxOYhWg
 
 	
+# OBTENER IMAGENES A PARTIR DE TEXTO
+https://github.com/gettyimages/gettyimages-api_nodejs
+
 # 1. COMO USAR ESTA HERRAMIENTA
 La idea es hacer unas llamadas a servicios RSS y tras obtener esos datos, generar unas paginas estaticas a traves de la herramienta "mkdocs site"    
 
